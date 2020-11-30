@@ -13,9 +13,16 @@ axios.interceptors.response.use(
     return response;
   },
   function(error) {
-    if (error.response.status === 400) {
+    const status = error.response.status;
+
+    if (status === 400) {
       alert(error.response.data?.data);
+    } else if (status === 401) {
+      alert('401 unauthorized');
+    } else if (status === 403) {
+      alert('403 access denied');
     }
+
     return Promise.reject(error.response);
   }
 );
