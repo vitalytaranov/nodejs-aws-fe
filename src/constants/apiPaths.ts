@@ -4,7 +4,7 @@ const API_PATHS = {
   order: 'https://f6hqzu6u08.execute-api.eu-west-1.amazonaws.com/dev',
   import: 'https://jyp7de8r2j.execute-api.eu-west-1.amazonaws.com/dev',
   bff: 'https://f6hqzu6u08.execute-api.eu-west-1.amazonaws.com/dev',
-  cart: 'http://vitalytaranov-cart-api-development.eu-west-1.elasticbeanstalk.com/api',
+  cart: 'https://wwdllantpg.execute-api.eu-west-1.amazonaws.com/dev/api',
 };
 
 export default API_PATHS;
